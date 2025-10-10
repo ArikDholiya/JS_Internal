@@ -19,7 +19,18 @@ function a(){
         var b = 10; 
     }
 }
-console.log(b);
+function outer(){
+    let count =0;
+    function inner (){
+        count++;
+        console.log(count);
+    }
+    return inner;
+}
+const fn = outer();
+fn(); // 1
+fn(); // 2
+fn(); // 3
 
 // this is concept of scope if we so scope chain c() is lexically inside a() & a() is lexically inside global 
 // so c() finds variable value from a() & global and a() finds variable value from global but global doesn't finds from a() & c()

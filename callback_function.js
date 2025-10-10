@@ -1,8 +1,8 @@
 // callback function - A function which we passed inside other funcation is known as ..
 // here function b is callback function
-function a()
+function a(cb)
 {
-
+    return cb();
 }
 
 a(function b(){
