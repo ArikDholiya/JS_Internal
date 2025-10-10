@@ -1,0 +1,15 @@
+// Understaing of local and global variavle understanding
+
+var x = 1;
+a();
+b();
+
+function a(){
+    var x=10;
+    console.log(x);
+}
+
+function b(){
+    var x=100;
+    console.log(x);
+}
