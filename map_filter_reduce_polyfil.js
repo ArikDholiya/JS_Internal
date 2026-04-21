@@ -17,7 +17,6 @@ Array.prototype.myFilter = function(callback){
 }
 
 
-
 Array.prototype.myReduce = function(callback, initialValue){
     const arr = this;
     const initialIndex = initialValue ? 0 : 1;

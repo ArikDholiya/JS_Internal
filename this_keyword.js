@@ -1,7 +1,7 @@
 //this:
 //normal function: inside a Regular Function this will be window object. inside object method, this refers to the object before the dot this is called implecit binding, ex: user.greet(), so inside greet function this keyword referes user object. inside nested function, for normal function this keyword referes window object.  normal function point to immediate parent.
 
-// arrow functions don’t bind their own this. They use the this value from where they were created. means it take this's value as whatever it parent normal function's this's value is
+// arrow functions don’t bind their own this. They use the this value from where they were created. means it take this's value as whatever it parent **normal function's** this's value is
 //IMP: this never points to function instead it points to context of funcction.
 
 function fun1() {
@@ -122,7 +122,7 @@ const userObj7 = {
   },
 };
 console.log(userObj7.greet()); //hello piyush!
-console.log(userObj7.farewell()); //goodbye, !
+console.log(userObj7.farewell()); //goodbye, undefined!
 
 console.log("-----------------");
 

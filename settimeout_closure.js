@@ -23,7 +23,7 @@ function a(){
                console.log(i);
             }, i*1000)
         }
-        close(i);
+        f1(i);
     }
 }
 // Here we saw we can use i as parameter and parameter also have generally block scope so we can get output 1 2 3 4 5
